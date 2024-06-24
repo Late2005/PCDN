@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="NL-nl">
+<head>
+    <!--Page title en icon-->
+    <title>Learn jQuery</title>
+    
+    <!--Meta data-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Links & styleheets-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="css/mystyle.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid text-center">
+            <div id="header" class="row justify-content-around align-items-center">
+                <div class="col-3 col-md-2">
+                    <img id="logo" src="logo/LP-logo.png" alt="Luxury Products logo">        
+                </div>    
+                <div class="col-6 col-md-8">
+                    <nav class="container-fluid">
+                        <div class="row justify-content-start">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">Your style</a></div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">Our brand</a></div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">In Season</a></div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">Wearables</a></div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">Collectables</a></div>                            
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link">More...</a></div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2"><a href="#link"><span class="menu material-symbols-outlined">close</span></a></div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-3 col-md-2">
+                    <span class="menu material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+    </header>
+    <div id="heroSection">
+        <img id="hero" class="smallscreen" src="img/anastasiya-gepp-sm.jpg" alt="elegant blonde model">
+        <div id="heroText" class="container text-center">
+            <div class="row justify-content-evenly">        
+                <div class="col-6">
+                    <h1>Make yourself the best version of you.</h1>
+                </div>
+                <div class="col-12 align-self-end">
+                    <p>All it takes is a little money.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="wrapper" class="container">
+        <section>
+            <article>
+                <h2>Article</h2>
+                    <p>Add some text</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Article</h2>
+                    <p>Add some text</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Article</h2>
+                    <p>Add some text</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Simple copyrights</h3>
+        <p id="disclamer">DISCLAIMER: We do not take responsibility for any and all information on this page.</p>
+        <a href="https://www.freepik.com/free-vector/letter-c-o-icon-abstract-logo-design_149441173.htm#fromView=search&page=2&position=18&uuid=22419668-ac5d-4206-bc43-e46fab0e8f69">Image by soepratman on Freepik</a>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          $(".menu").click(function(){
+            $("nav").toggle("slow");
+          });
+        });
+        </script>
+</body>
+</html>
