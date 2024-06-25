@@ -1,100 +1,12 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: "Open Sans", Arial, "Sans Serif";
-}
-
 body {
-    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.clear-systems.nl/web/image/1583-6872f1f7/CLEAR-Systems-building.webp');
+    background-size: cover;
+    background-position: right;
+    background-repeat:no-repeat;
 }
 
-:root {
-    --base: #ffffff;
-    --primary: #f0dcdf;
-    --secundary: #fff6f6;
-    --highlight: #cfb53b;
-    --input: #1e2d2f;
-    --text: #1e2d2f;
-    --text-contrast: #fff6f6;
+@media screen and (min-width: 991px) {
+    body {
+        background-position: center;
+    }
 }
-
-header {
-    background-color: var(--primary);
-}
-
-main, section, footer, #header {
-    min-height: 10vh;
-}
-
-aside, article {
-    min-height: 200px;
-}
-
-h1 {margin: 0 !important;
-    padding: 0 !important;
-    font-size: 8vmax !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Serif", Georgia, 'Times New Roman', Times, serif;
-}
-
-#logo {
-    width: 100%;
-    height: auto;
-}
-
-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    background-image: linear-gradient(#f0dcdfF1,#f0dcdfF1);
-    z-index: 100;
-}
-
-nav a {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: calc(100% / 14) 0%;
-    margin: auto;
-    font-size: 1.75em;
-    text-decoration: none;
-    color: var(--text)
-}
-
-nav a:hover {
-    background-color: var(--base);
-}
-
-.menu {
-    font-size: 10vmin;
-}
-
-#heroSection {
-    position: relative;
-    color: var(--text-contrast);
-}
-
-#hero {
-    width: 100%;
-    height: auto;
-    z-index: -100;
-}
-
-#heroText {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(#1e2d2f40,#1e2d2f40);
-}
-
