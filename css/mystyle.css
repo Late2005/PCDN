@@ -1,6 +1,6 @@
 .oe_website_login_container {
-    height: calc(100%-50px);
-    padding-top: 50px;
+    height: 100%;
+    padding-top: 1px;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.clear-systems.nl/web/image/1583-6872f1f7/CLEAR-Systems-building.webp');
     background-size: cover;
     background-position: right;
